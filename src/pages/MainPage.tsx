@@ -1,5 +1,6 @@
 import React from 'react'
-import styled from 'styled-components'
+import sty from '../styling'
+import Header from '../components/Header'
 import { Button, Image } from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom'
 
@@ -13,63 +14,30 @@ export default function MainPage():React.ReactElement {
   }
 
   return (
-    <Wrapper>
-      <Header>나는 어떤 피자일까?🍕</Header>
-      <ContentWrapper>
-        <Title>나에게 맞는 피자는?</Title>
-        <LogoImage>
+    <sty.Wrapper>
+      <Header type='head' questionNumber={0}/>
+      <sty.ContentWrapper>
+        <sty.Title>나와 맞는 피자는?</sty.Title>
+        <sty.LogoImage>
           <Image className="rounded-circle" src={MetzeImage} width={350} height={350}/>
-        </LogoImage>
-        <Desc>
-          나의 피자 타입은?
-        </Desc>
-        <Desc>
-          매 체 조 아
-        </Desc>
-        <Button className='btn-primary' onClick={handleClickButton} style={{fontSize:25, marginTop:20, marginBottom:20}}>테스트 시작하기</Button>
-      </ContentWrapper>
-    </Wrapper>
+        </sty.LogoImage>
+        <sty.Desc>
+          피자방 생활 어언 3년.
+        </sty.Desc>
+        <sty.Desc>
+          내가 어떤 피자인지 알아보자.
+        </sty.Desc>
+        <sty.smallWrapper>
+          <sty.small>
+            이 퀴즈를 귀여운 피자방 사람들에게 바칩니다.
+          </sty.small>
+          <sty.small>
+          제작자: 매체
+          </sty.small>
+        </sty.smallWrapper>
+        <sty.Button onClick={handleClickButton} style={{fontSize:25, marginTop:20, marginBottom:20}}>테스트 시작하기</sty.Button>
+      </sty.ContentWrapper>
+    </sty.Wrapper>
   )
 }
 
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100vh;
-  background: ivory;
-  font-family: "omyu pretty";
-`;
-
-const ContentWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-`;
-
-const Header = styled.div`
-  background: #388a55;
-  font-size: 40pt;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
-const Title = styled.div`
-font-size: 30pt;
-  display: flex;
-  margin-top: 20px;
-`;
-
-const LogoImage = styled.div`
-  display: flex;
-  margin-top: 20px;
-`;
-
-const Desc = styled.div`
-  font-size: 20pt;
-  display: flex;
-  margin-top: 10px;
-`;

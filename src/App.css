@@ -1,11 +1,18 @@
 .App {
   text-align: center;
-  font-family: "omyu pretty";
+  font-family: "oneBold";
 }
 
+/* 본문 */
 @font-face {
-  font-family: "omyu pretty";
-  src: url(./assets/font/omyu\ pretty.ttf);
+  font-family: "oneBold";
+  src: url(./assets/font/ONE\ Mobile\ Bold.ttf);
+}
+
+/* 제목 */
+@font-face {
+  font-family: "oneTitle";
+  src: url(./assets/font/ONE\ Mobile\ Title.ttf);
 }
 
 .App-logo {
