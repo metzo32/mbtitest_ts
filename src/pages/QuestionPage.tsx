@@ -4,6 +4,8 @@ import { Button } from 'react-bootstrap'
 import { QuestionData } from '../stores/Question/QuestionData'
 import Header from '../components/Header'
 import { createSearchParams, useNavigate } from 'react-router-dom'
+// import transition from '../transition'
+
 
 export default function QuestionPage():React.ReactElement {
   const [questionNumber, setQuestionNumber] = useState(0);
@@ -100,3 +102,4 @@ export default function QuestionPage():React.ReactElement {
   )
 }
 
+// export default transition(QuestionPage)

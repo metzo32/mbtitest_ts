@@ -4,6 +4,8 @@ import Header from '../components/Header'
 import sty from '../styling'
 import { useNavigate, useSearchParams } from 'react-router-dom'
 import { IResult } from '../stores/Result/types'
+// import transition from '../transition'
+
 
 export default function ResultPage():React.ReactElement {
   const [searchParams] = useSearchParams()
@@ -42,3 +44,6 @@ export default function ResultPage():React.ReactElement {
     </sty.Wrapper>
   )
 }
+
+
+// export default transition(ResultPage)

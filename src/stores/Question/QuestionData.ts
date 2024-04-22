@@ -131,8 +131,8 @@ export const QuestionData: IQuestion[] = [
     {
         id : 19,
         title: "힐러가 10시를 또 놓쳤다.",
-        answerA: "저런ㅋㅋㅋㅋ",   // P관련
-        answerB: "저도 놓쳤쇼...",   // J관련
+        answerA: "저도 놓쳤쇼...",   // P관련
+        answerB: "또 뭘 샀는지 궁금하다.",   // J관련
         type: "JP",
     },
     {

@@ -54,16 +54,15 @@ const ProgressbarWrapper = styled.div`
   .progress-bar {
     background-color: #FFAA20; 
     transition: width 0.6s ease;
-    background: rgb(255,182,55);
-  background: linear-gradient(90deg, rgba(255,182,55,1) 0%, rgba(253,138,29,1) 50%, rgba(255,100,39,1) 100%);
-  }
+    background: rgb(255,210,57);
+    background: linear-gradient(90deg, rgba(255,210,57,1) 0%, rgba(254,169,32,1) 50%, rgba(255,134,42,1) 100%);
 `;
 
 
 const Title = styled.div`
   font-size: 30pt;
   display: flex;
-  margin-top: 20px;
+  margin-top: 16px;
 `;
 
 const LogoImage = styled.div`
@@ -75,7 +74,7 @@ const LogoImage = styled.div`
 const Desc = styled.div`
   font-size: 20pt;
   display: flex;
-  margin-top: 10px;
+  margin-top: 8px;
 `;
 
 const small = styled.div`
@@ -94,7 +93,7 @@ const smallWrapper = styled.div`
 `;
 
 const ButtonGroup = styled.div`
-  font-size: 20pt;
+  font-size: 18pt;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -162,6 +161,29 @@ const BestWrapperImage = styled.div`
   padding-right: 70px;
 `;
 
+const motion = styled.div`
+  .slide-in {
+    position: fixed;
+    top: 0,
+    left: 0,
+    width: 100%,
+    height: 100vh,
+    background: #000000;
+    transform-origin: left;
+  }
+
+  .slide-out {
+    position: fixed;
+    top: 0,
+    left: 0,
+    width: 100%,
+    height: 100vh,
+    background: #000000;
+    transform-origin: right;
+  }
+`
+
+
 
 const sty = {
   Wrapper,
@@ -182,6 +204,7 @@ const sty = {
   BestDesc,
   BestWrapper,
   BestWrapperImage,
+  motion,
 }
 
 export default sty;
