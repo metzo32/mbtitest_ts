@@ -20,7 +20,7 @@ export default function MainPage():React.ReactElement {
       <sty.ContentWrapper>
         <sty.Title>나는 어떤 피자일까?</sty.Title>
         <sty.LogoImage>
-          <Image className="rounded-circle" src={MainImage} width={380} height={380}/>
+          <Image className="rounded-circle" alt="피자" src={MainImage} width={380} height={380}/>
         </sty.LogoImage>
         <sty.Desc>
           피자방 생활 어언 3년.
