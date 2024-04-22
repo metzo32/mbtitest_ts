@@ -24,7 +24,7 @@ export default function ResultPage():React.ReactElement {
           <sty.ResultTitle>내 피자는...</sty.ResultTitle>
           <img src={TestResult?.image} width={800} height={800}/>
           <sty.ResultDesc>
-            당신은 {TestResult?.name}입니다!
+            {TestResult?.name}입니다!
           </sty.ResultDesc>
           <sty.resultSmall>
             {TestResult?.desc}

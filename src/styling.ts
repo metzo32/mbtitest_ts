@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import { ProgressBar } from 'react-bootstrap';
+
 
 const Wrapper = styled.div`
   display: flex;
@@ -7,7 +9,10 @@ const Wrapper = styled.div`
   height: 100%;
   min-width: 800px;
   min-height: 100vh;
-  background: #FFEFD5;
+  background: #FFEFD8;
+  padding-top: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
   font-family: "oneBold";
   user-select: none;
 `;
@@ -39,6 +44,22 @@ const HeaderWrapper = styled.div`
   font-family: "oneTitle";
 `
 
+const ProgressbarWrapper = styled.div`
+  .progress {
+    width: 100%; 
+    height: 30px; 
+    background: #FFF5E8;
+  }
+
+  .progress-bar {
+    background-color: #FFAA20; 
+    transition: width 0.6s ease;
+    background: rgb(255,182,55);
+  background: linear-gradient(90deg, rgba(255,182,55,1) 0%, rgba(253,138,29,1) 50%, rgba(255,100,39,1) 100%);
+  }
+`;
+
+
 const Title = styled.div`
   font-size: 30pt;
   display: flex;
@@ -60,12 +81,12 @@ const Desc = styled.div`
 const small = styled.div`
   font-size: 14pt;
   display: flex;
-  margin-top: 8px;
   color: #A8A8A8;
 `;
 
 const smallWrapper = styled.div`
-  margin-top: 20px;
+  margin-top: 22px;
+  margin-bottom: 2px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -111,13 +132,13 @@ const resultSmall = styled.div`
   font-size: 16pt;
   display: flex;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   color: #707070;
 `;
 
 const BestDesc = styled.div`
   width: 800px;
-  font-size: 24pt;
+  font-size: 21pt;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -137,15 +158,17 @@ const BestWrapperImage = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 70px;
+  padding-right: 70px;
 `;
+
 
 const sty = {
   Wrapper,
   ContentWrapper,
   Header,
   HeaderWrapper,
+  ProgressbarWrapper,
   Title,
   LogoImage,
   Desc,

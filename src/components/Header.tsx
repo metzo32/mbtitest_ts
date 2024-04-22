@@ -13,16 +13,25 @@ export default function Header(props: Props) { // 프로그레스바 또는 텍�
     ? Math.round((props.questionNumber / QuestionData.length) * 100)
     : 0; // 'props.questionNumber'가 undefined일 경우 0으로 설정
   
-  return (
-    <sty.HeaderWrapper>
+    return (
+      <>
         {props.type === "progress" 
-            ? (<ProgressBar 
-              className="progress-bar progress-bar-striped progress-bar-animated bg-warning"
-              now={percentage} 
-              label={`${percentage}%`} 
-              style={{width: '100%', height: '100%'}}/>) 
-            : (<div>피자방 피자 테스트🍕</div>)
-        }
-    </sty.HeaderWrapper>
-  )
+        ? (
+          <sty.ProgressbarWrapper>
+            <ProgressBar
+              className="progress"
+              role='progressbar'
+              now={percentage}
+              label={`${percentage}%`}
+              // style={{ width: '100%', height: '30px' }} // 이 부분은 styled-components로 추후 개선 가능
+            />
+          </sty.ProgressbarWrapper>
+        ) 
+        : (
+          <sty.HeaderWrapper>
+            <div>피자방 피자 테스트🍕</div>
+          </sty.HeaderWrapper>
+        )}
+      </>
+    );
 }

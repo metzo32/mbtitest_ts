@@ -4,7 +4,7 @@ import Header from '../components/Header'
 import { Button, Image } from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom'
 
-import MetzeImage from '../assets/01.jpg'
+import MainImage from '../assets/pizza/pizza_Main.jpg'
 
 export default function MainPage():React.ReactElement {
 
@@ -17,9 +17,9 @@ export default function MainPage():React.ReactElement {
     <sty.Wrapper>
       <Header type='head' questionNumber={0}/>
       <sty.ContentWrapper>
-        <sty.Title>나와 맞는 피자는?</sty.Title>
+        <sty.Title>나는 어떤 피자일까?</sty.Title>
         <sty.LogoImage>
-          <Image className="rounded-circle" src={MetzeImage} width={350} height={350}/>
+          <Image className="rounded-circle" src={MainImage} width={380} height={380}/>
         </sty.LogoImage>
         <sty.Desc>
           피자방 생활 어언 3년.
@@ -32,7 +32,7 @@ export default function MainPage():React.ReactElement {
             이 퀴즈를 귀여운 피자방 사람들에게 바칩니다.
           </sty.small>
           <sty.small>
-          제작자: 매체
+          제작자: metze.
           </sty.small>
         </sty.smallWrapper>
         <sty.Button onClick={handleClickButton} style={{fontSize:25, marginTop:20, marginBottom:20}}>테스트 시작하기</sty.Button>
