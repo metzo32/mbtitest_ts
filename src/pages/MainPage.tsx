@@ -1,7 +1,7 @@
 import React from 'react'
 import sty from '../styling'
 import Header from '../components/Header'
-import { Button, Image } from 'react-bootstrap'
+import { Image } from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom'
 
 import MainImage from '../assets/pizza/pizza_Main.jpg'

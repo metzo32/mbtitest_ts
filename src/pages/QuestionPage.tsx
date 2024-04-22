@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import sty from '../styling'
-import { Button } from 'react-bootstrap'
 import { QuestionData } from '../stores/Question/QuestionData'
 import Header from '../components/Header'
 import { createSearchParams, useNavigate } from 'react-router-dom'

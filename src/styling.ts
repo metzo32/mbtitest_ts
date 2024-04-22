@@ -1,6 +1,4 @@
 import styled from 'styled-components'
-import { ProgressBar } from 'react-bootstrap';
-
 
 const Wrapper = styled.div`
   display: flex;

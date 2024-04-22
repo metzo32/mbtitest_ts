@@ -2,7 +2,7 @@ import React from 'react'
 import { ResultData } from '../stores/Result/ResultData'
 import Header from '../components/Header'
 import sty from '../styling'
-import { useNavigate, useSearchParams } from 'react-router-dom'
+import { useSearchParams } from 'react-router-dom'
 import { IResult } from '../stores/Result/types'
 // import transition from '../transition'
 
@@ -36,8 +36,8 @@ export default function ResultPage():React.ReactElement {
               나와 잘 맞는 다른 피자는 {bestPizza}와 {bestPizza2}입니다.
             </sty.BestDesc>
             <sty.BestWrapperImage>
-              <img src={bestPizzaImg?.image} width={300} height={300}/>
-              <img src={bestPizzaImg2?.image} width={300} height={300}/>
+              <img src={bestPizzaImg?.image} alt="피자" width={300} height={300}/>
+              <img src={bestPizzaImg2?.image} alt="피자" width={300} height={300}/>
             </sty.BestWrapperImage>
           </sty.BestWrapper>
         </sty.ContentWrapper>
