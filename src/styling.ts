@@ -358,7 +358,7 @@ const BestDesc = styled.div`
 
   @media (min-width: 900px) {
     width: 800px;
-    font-size: 2pt;
+    font-size: 20pt;
 `;
 
 const BestWrapperImage = styled.div`
@@ -396,6 +396,10 @@ const rotateAnimation = keyframes`
   }
 `;
 
+const RotatingImage = styled.img`
+  animation: ${rotateAnimation} 4s steps(12, end) infinite; // 18단계로 나누어 매 초마다 회전
+`;
+
 
 const sty = {
   Wrapper,
@@ -421,6 +425,7 @@ const sty = {
   BestWrapperImage,
   BestPizzaImg,
   rotateAnimation,
+  RotatingImage,
 }
 
 export default sty;
