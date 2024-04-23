@@ -85,11 +85,11 @@ export default function QuestionPage():React.ReactElement {
     <sty.Wrapper>
       <Header type='progress' questionNumber = {questionNumber}/>
       <sty.ContentWrapper>
-        <sty.Title>
+        <sty.QuestionTitle>
             {QuestionData[questionNumber].title}
-        </sty.Title>
+        </sty.QuestionTitle>
         <sty.ButtonGroup>
-          <sty.Button style={{marginRight: '20px'}} onClick={ () => handleClickAnswer(1, QuestionData[questionNumber].type)}>
+          <sty.Button className="right-margin" onClick={ () => handleClickAnswer(1, QuestionData[questionNumber].type)}>
               {QuestionData[questionNumber].answerA}
           </sty.Button>
           <sty.Button onClick={ () => handleClickAnswer(0, QuestionData[questionNumber].type)}>

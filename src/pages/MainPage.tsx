@@ -20,7 +20,7 @@ export default function MainPage():React.ReactElement {
       <sty.ContentWrapper>
         <sty.Title>나는 어떤 피자일까?</sty.Title>
         <sty.LogoImage>
-          <Image className="rounded-circle" alt="피자" src={MainImage} width={380} height={380}/>
+          <Image className="rounded-circle main-pizza" alt="피자" src={MainImage} />
         </sty.LogoImage>
         <sty.Desc>
           피자방 생활 어언 3년.
@@ -30,13 +30,13 @@ export default function MainPage():React.ReactElement {
         </sty.Desc>
         <sty.smallWrapper>
           <sty.small>
-            이 퀴즈를 귀여운 피자방 사람들에게 바칩니다.
+            귀여운 피자방 사람들에게 바칩니다.
           </sty.small>
           <sty.small>
           제작자: metze.
           </sty.small>
         </sty.smallWrapper>
-        <sty.Button onClick={handleClickButton} style={{fontSize:25, marginTop:20, marginBottom:20}}>테스트 시작하기</sty.Button>
+        <sty.Button onClick={handleClickButton} style={{fontSize:25, marginTop:20, marginBottom:20}}>테스트 시작</sty.Button>
       </sty.ContentWrapper>
     </sty.Wrapper>
   )

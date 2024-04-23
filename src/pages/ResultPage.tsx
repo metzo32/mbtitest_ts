@@ -24,7 +24,7 @@ export default function ResultPage():React.ReactElement {
       <Header type='head'/>
         <sty.ContentWrapper>
           <sty.ResultTitle>내 피자는...</sty.ResultTitle>
-          <img src={TestResult?.image} alt="피자" width={800} height={800}/>
+            <sty.StyledImage src={TestResult?.image} alt="피자" />
           <sty.ResultDesc>
             {TestResult?.name}입니다!
           </sty.ResultDesc>
@@ -32,12 +32,17 @@ export default function ResultPage():React.ReactElement {
             {TestResult?.desc}
           </sty.resultSmall>
           <sty.BestWrapper>
-            <sty.BestDesc>
-              나와 잘 맞는 다른 피자는 {bestPizza}와 {bestPizza2}입니다.
+            <sty.BestDescWrapper>
+              <sty.BestDesc>
+              함께 먹으면 맛있는 피자는
+              </sty.BestDesc>
+              <sty.BestDesc>
+                {bestPizza}와 {bestPizza2}입니다.
             </sty.BestDesc>
+            </sty.BestDescWrapper>
             <sty.BestWrapperImage>
-              <img src={bestPizzaImg?.image} alt="피자" width={300} height={300}/>
-              <img src={bestPizzaImg2?.image} alt="피자" width={300} height={300}/>
+              <sty.BestPizzaImg src={bestPizzaImg?.image} alt="피자" />
+              <sty.BestPizzaImg src={bestPizzaImg2?.image} alt="피자" />
             </sty.BestWrapperImage>
           </sty.BestWrapper>
         </sty.ContentWrapper>

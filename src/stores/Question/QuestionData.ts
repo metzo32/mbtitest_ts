@@ -67,7 +67,7 @@ export const QuestionData: IQuestion[] = [
     },
     {
         id : 10,
-        title: "중간고사 준비 중인 봉봉. 공부를 하다 말고 '여러분 저 잠와요...' 라고 한다.",
+        title: "중간고사 기간. 봉봉이 공부를 하다 말고 '여러분 저 잠와요...' 라고 한다.",
         answerA: "그만 자",   // N관련
         answerB: "공부해",   // S관련
         type: "NS",
@@ -123,9 +123,9 @@ export const QuestionData: IQuestion[] = [
     },
     {
         id : 18,
-        title: "오랜만에 하루종일 게임 하는 날이다!",
-        answerA: "'오전 중에 로아 숙제하고 오후에는 딜러 경쟁하고 이따 리썰해야지!' 이미 스케줄은 정해져있다.",   // J관련
-        answerB: "'어 마크할까?' 그 날 하고싶은 것을 한다.",   // P관련
+        title: "다음 중 세나는 무엇을 더 좋아할까?",
+        answerA: "계란이랑 치즈",   // J관련
+        answerB: "정원",   // P관련
         type: "JP",
     },
     {

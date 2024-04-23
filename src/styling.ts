@@ -1,18 +1,30 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
-  min-width: 800px;
+  min-width: 320px;
   min-height: 100vh;
   background: #FFEFD8;
   padding-top: 40px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
   font-family: "oneBold";
   user-select: none;
+
+  @media (min-width: 600px) {
+    width: 100%; 
+    height: 100%;  
+    min-height: 100vh;  
+  }
+
+  @media (min-width: 900px) {
+    width: 100%;
+    height: 100%; 
+    min-height: 100vh;
+  }
 `;
 
 const ContentWrapper = styled.div`
@@ -20,27 +32,41 @@ const ContentWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
+  margin-top: 10px;
+
+  @media (min-width: 600px) {
+    margin-top: 15px;
+  }
+
+  @media (min-width: 900px) {
+    margin-top: 20px;
+  }
 `;
 
-const Header = styled.div`
-  background: #FFAA20;
-  font-size: 40pt;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
-const HeaderWrapper = styled.div`
-  font-size: 40pt;
+//대제목
+const HeaderWrapper = styled.div` 
+  font-size: 28px;
   background: #FFAA20;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "oneTitle";
+
+  @media (min-width: 600px) {
+    font-size: 37pt;
+  }
+
+  @media (min-width: 900px) {
+    font-size: 40pt;
+  }
 `
+const Header = styled.div`
+  background: #FFAA20;
+  font-size: 26pt;
+  display: flex;
+  align-items: center;
+  }
+`;
 
 const ProgressbarWrapper = styled.div`
   .progress {
@@ -58,46 +84,123 @@ const ProgressbarWrapper = styled.div`
 
 
 const Title = styled.div`
-  font-size: 30pt;
+  display: block;
+  font-size: 20pt;
   display: flex;
-  margin-top: 16px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  padding: 20px;
+  white-space: nowrap;
+
+  @media (min-width: 600px) {
+    font-size: 25pt;
+    white-space: normal;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  @media (min-width: 900px) {
+    font-size: 30pt;
+    white-space: normal;
 `;
 
 const LogoImage = styled.div`
   display: flex;
-  margin-top: 20px;
   margin-bottom: 20px;
+  
+  .main-pizza {
+    max-width: 280px;
+    height: 280px;
+    margin-bottom: 24px;
+    
+    @media (min-width: 600px) {
+      max-width: 330px;
+      height: 330px;
+    }
+  
+    @media (min-width: 900px) {
+      max-width: 380px;
+      height: 380px;
+    }
+  }
 `;
+
 
 const Desc = styled.div`
-  font-size: 20pt;
+  font-size: 13pt;
   display: flex;
-  margin-top: 8px;
-`;
+  white-space: nowrap;
 
-const small = styled.div`
-  font-size: 14pt;
-  display: flex;
-  color: #A8A8A8;
+  @media (min-width: 600px) {
+    font-size: 18pt;
+  }
+
+  @media (min-width: 900px) {
+    font-size: 22pt;
+  }
 `;
 
 const smallWrapper = styled.div`
-  margin-top: 22px;
+  margin-top: 16px;
   margin-bottom: 2px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  @media (min-width: 600px) {
+    margin-top: 19px;
+  }
+
+  @media (min-width: 900px) {
+    margin-top: 22px;
 `;
 
+const small = styled.div`
+  font-size: 10pt;
+  display: flex;
+  color: #A8A8A8;
+  white-space: nowrap;
+
+  @media (min-width: 600px) {
+    font-size: 12pt;
+  }
+
+  @media (min-width: 900px) {
+    font-size: 14pt;
+`;
+
+const QuestionTitle = styled.div`
+  display: block;
+  font-size: 14pt;
+  font-style: bold;
+  display: flex;
+  margin-top: 16px;
+  padding: 20px;
+  // white-space: nowrap;
+
+  @media (min-width: 600px) {
+    font-size: 20pt;
+  }
+
+  @media (min-width: 900px) {
+    font-size: 26pt;
+`
 const ButtonGroup = styled.div`
-  font-size: 18pt;
+  font-size: 12pt;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
-  margin-top: 10px;
-  padding: 20px;
+  flex-direction: column;
+  
+  @media (min-width: 600px) {
+    font-size: 16pt;
+    flex-direction: column;
+  }
+
+  @media (min-width: 900px) {
+    font-size: 18pt;
+    flex-direction: row;
 `;
 
 const Button = styled.div`
@@ -109,78 +212,189 @@ const Button = styled.div`
   border-radius: 20px;
   cursor: pointer;
   user-select: none;
-`
+
+  &.right-margin {
+    margin-right: 0px;
+    margin-bottom: 20px;
+
+    @media (min-width: 600px) {
+      margin-right: 0px;
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: 900px) {
+      margin-right: 20px;
+      margin-bottom: 0;
+    }
+  }
+`;
+
+const StyledImage = styled.img`
+    width: 90%;
+
+    @media (min-width: 600px) {
+      width: 90%;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
+    @media (min-width: 900px) {
+      width: 800px;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+  `;
+
 
 const ResultTitle = styled.div`
-  font-size: 32pt;
+  display: block;
+  font-size: 18pt;
   display: flex;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding: 16px;
+  white-space: nowrap;
+
+  @media (min-width: 600px) {
+    font-size: 25pt;
+    padding: 20px;
+    white-space: normal;
+  }
+
+  @media (min-width: 900px) {
+    font-size: 30pt;
+    padding: 20px;
+    white-space: normal;
 `;
 
 const ResultDesc = styled.div`
-  font-size: 26pt;
+  font-size: 18pt;
   display: flex;
   margin-top: 30px;
+
+  @media (min-width: 600px) {
+    font-size: 25pt;
+    white-space: normal;
+  }
+
+  @media (min-width: 900px) {
+    font-size: 30pt;
+    white-space: normal;
+  
 `;
 
 const resultSmall = styled.div`
-  width: 800px;
-  font-size: 16pt;
+  font-size: 10pt;
+  max-width: 600px;
   display: flex;
   margin-top: 20px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   color: #707070;
-`;
 
-const BestDesc = styled.div`
-  width: 800px;
-  font-size: 21pt;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 15px;
-  margin-bottom: 40px;
-  color: #707070;
+  @media (min-width: 600px) {
+    width: 800px
+    font-size: 13pt;
+    max-width: 600px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    white-space: normal;
+  }
+
+  @media (min-width: 900px) {
+    font-size: 16pt;
+    max-width: 800px;
+    margin-bottom: 60px;
+    white-space: normal;
 `;
 
 const BestWrapper = styled.div`
+  width: 95%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 50px;
+  margin-top: 0px;
+
+  @media (min-width: 600px) {
+    width: 90%;
+    margin-top: 0px;
+  }
+
+  @media (min-width: 900px) {
+    margin-top: 50px;
+    width: 800px;
+  }
+`;
+
+const BestDescWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 15px;
+
+  @media (min-width: 600px) {
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: 900px) {
+    margin-bottom: 35px;
+`
+
+const BestDesc = styled.div`
+  
+  font-size: 12pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #707070;
+  white-space: normal;
+
+  @media (min-width: 600px) {
+    width: 600px;
+    font-size: 18pt;
+  }
+
+  @media (min-width: 900px) {
+    width: 800px;
+    font-size: 2pt;
 `;
 
 const BestWrapperImage = styled.div`
+  width: 80%;
+  min-width: 200px;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding-left: 70px;
-  padding-right: 70px;
-`;
 
-const motion = styled.div`
-  .slide-in {
-    position: fixed;
-    top: 0,
-    left: 0,
-    width: 100%,
-    height: 100vh,
-    background: #000000;
-    transform-origin: left;
+  @media (min-width: 600px) {
+    width: 95%;
   }
 
-  .slide-out {
-    position: fixed;
-    top: 0,
-    left: 0,
-    width: 100%,
-    height: 100vh,
-    background: #000000;
-    transform-origin: right;
+  @media (min-width: 900px) {
+    width: 800px;
+`;
+
+const BestPizzaImg = styled.img`
+  width: 49%;
+
+  @media (min-width: 600px) {
+  }
+
+  @media (min-width: 900px) {
+
   }
 `
 
+const rotateAnimation = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+`;
 
 
 const sty = {
@@ -194,15 +408,19 @@ const sty = {
   Desc,
   small,
   smallWrapper,
+  QuestionTitle,
   ButtonGroup,
   Button,
+  StyledImage,
   ResultTitle,
+  BestDescWrapper,
   ResultDesc,
   resultSmall,
   BestDesc,
   BestWrapper,
   BestWrapperImage,
-  motion,
+  BestPizzaImg,
+  rotateAnimation,
 }
 
 export default sty;
