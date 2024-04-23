@@ -4,7 +4,7 @@ export const QuestionData: IQuestion[] = [
     {
         id : 1,
         title: "주말 오후 시간. 분명 게임하자고 모여들 피자방 사람들이 보이지 않는다.",
-        answerA: "'님들 모해 빨리 모여! @everyone' 당장 사람들을 모은다.",   // E관련
+        answerA: "'님들 모해 빨리 모여~! @everyone' 서둘러 사람들을 모은다.",   // E관련
         answerB: "'다들 약속있나...' 그냥 혼자 게임을 한다.",   // I관련
         type: "EI",
     },
@@ -18,7 +18,7 @@ export const QuestionData: IQuestion[] = [
     {
         id : 3,
         title: "게임에 몰두하고 있는 와중, 누군가 나를 급하게 멘션했다.",
-        answerA: "'누구야 뭐야 당장 읽어!' 곧바로 확인한다.",   // E관련
+        answerA: "'누구야 뭐야!' 곧바로 확인한다.",   // E관련
         answerB: "도하가 보낸 릴스가 분명하다. 알림을 끄고 게임에 집중한다.",   // I관련
         type: "EI",
     },
@@ -46,7 +46,7 @@ export const QuestionData: IQuestion[] = [
    
     {
         id : 7,
-        title: "맙소사! 아주 멋진 POTG를 기록했다!",
+        title: "맙소사! 멋진 POTG를 기록했다!",
         answerA: "'진웅님 제발 이거 봐줘요!' 채널에 강제로 초대해 상영회를 열고 칭찬을 기대한다.",   // N관련
         answerB: "'역시 나야...' 조용히 만족한다.",   // S관련
         type: "NS",
@@ -62,7 +62,7 @@ export const QuestionData: IQuestion[] = [
         id : 9,
         title: "오후 7시. 재현이 저녁 메뉴를 추천해달라고 한다.",
         answerA: "'김치 사발면에 참치 김밥 한줄이랑 빠다코코넛에 투게더 얹어 먹죠.' 홀린 듯 술술 말한다.",   // N관련
-        answerB: "저걸 왜 나한테 묻는 걸까? 굶으라고 한다.",   // S관련
+        answerB: "저걸 왜 나한테 묻는 걸까? 그냥 굶죠?",   // S관련
         type: "NS",
     },
     {
@@ -81,7 +81,7 @@ export const QuestionData: IQuestion[] = [
     },
     {
         id : 12,
-        title: "뿡이의 감기가 좀처럼 낫지 않는다ㅜㅜ",
+        title: "뿡이의 감기가 좀처럼 낫지 않는다.",
         answerA: "'약은 먹었나요? 아프지 말아요ㅠㅠ' 피자방 사람들 모두 건강했으면 좋겠다고 생각한다.",   // F관련
         answerB: "별 생각 없다.",   // T관련
         type: "FT",
@@ -116,7 +116,7 @@ export const QuestionData: IQuestion[] = [
     },
     {
         id : 17,
-        title: "드디어 오버워치 신규 캐릭터가 나왔다.",
+        title: "오버워치 신규 캐릭터가 나왔다.",
         answerA: "공격력, 스킬, 쿨타임 등 모든 정보를 꼼꼼히 읽고 미리 플레이해본다.",   // J관련
         answerB: "'션 이거 어떻게 해?' 또는 랠파의 설명을 기다린다.",   // P관련
         type: "JP",
@@ -138,7 +138,7 @@ export const QuestionData: IQuestion[] = [
     {
         id : 20,
         title: "매체가 피자 약속이 있어 외출을 하게 됐다.",
-        answerA: "맛있겠다 피자!",   // P관련
+        answerA: "나도 데려가면 좋겠다...",   // P관련
         answerB: "매체님 피자 지난 주에 세번 먹지 않았어요?",   // J관련
         type: "JP",
     },

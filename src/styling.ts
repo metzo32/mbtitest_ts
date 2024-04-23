@@ -9,8 +9,8 @@ const Wrapper = styled.div`
   min-height: 100vh;
   background: #FFEFD8;
   padding-top: 40px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
   font-family: "oneBold";
   user-select: none;
 
@@ -18,12 +18,16 @@ const Wrapper = styled.div`
     width: 100%; 
     height: 100%;  
     min-height: 100vh;  
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   @media (min-width: 900px) {
     width: 100%;
     height: 100%; 
     min-height: 100vh;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 `;
 
@@ -33,6 +37,7 @@ const ContentWrapper = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 10px;
+  margin-bottom: 40px;
 
   @media (min-width: 600px) {
     margin-top: 15px;
@@ -45,24 +50,27 @@ const ContentWrapper = styled.div`
 
 //대제목
 const HeaderWrapper = styled.div` 
-  font-size: 28px;
   background: #FFAA20;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "oneTitle";
+  font-size: 30px;
+  white-space: nowrap;
 
   @media (min-width: 600px) {
-    font-size: 37pt;
+    border-radius: 15px;
+    font-size: 45px;
   }
 
   @media (min-width: 900px) {
-    font-size: 40pt;
+    border-radius: 20px;
+    font-size: 60px;
   }
 `
 const Header = styled.div`
   background: #FFAA20;
-  font-size: 26pt;
   display: flex;
   align-items: center;
   }
@@ -85,10 +93,8 @@ const ProgressbarWrapper = styled.div`
 
 const Title = styled.div`
   display: block;
-  font-size: 20pt;
+  font-size: 16pt;
   display: flex;
-  margin-top: 6px;
-  margin-bottom: 6px;
   padding: 20px;
   white-space: nowrap;
 
@@ -106,7 +112,7 @@ const Title = styled.div`
 
 const LogoImage = styled.div`
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   
   .main-pizza {
     max-width: 280px;
@@ -187,42 +193,44 @@ const QuestionTitle = styled.div`
     font-size: 26pt;
 `
 const ButtonGroup = styled.div`
-  font-size: 12pt;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   
   @media (min-width: 600px) {
-    font-size: 16pt;
     flex-direction: column;
   }
 
   @media (min-width: 900px) {
-    font-size: 18pt;
     flex-direction: row;
 `;
 
 const Button = styled.div`
   background: #FFAA1F;
+  font-size: 15pt;
   color: #ffffff;
-  padding: 20px;
-  padding-left: 28px;
-  padding-right: 28px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 26px;
+  padding-right: 26px;
   border-radius: 20px;
   cursor: pointer;
   user-select: none;
+  margin-top: 20px;
 
   &.right-margin {
     margin-right: 0px;
     margin-bottom: 20px;
 
     @media (min-width: 600px) {
+      font-size: 18pt;
       margin-right: 0px;
       margin-bottom: 20px;
     }
 
     @media (min-width: 900px) {
+      font-size: 20pt;
       margin-right: 20px;
       margin-bottom: 0;
     }
@@ -231,6 +239,7 @@ const Button = styled.div`
 
 const StyledImage = styled.img`
     width: 90%;
+    border-radius: 30px;
 
     @media (min-width: 600px) {
       width: 90%;
@@ -378,6 +387,7 @@ const BestWrapperImage = styled.div`
 
 const BestPizzaImg = styled.img`
   width: 49%;
+  border-radius: 20px;
 
   @media (min-width: 600px) {
   }
@@ -385,6 +395,10 @@ const BestPizzaImg = styled.img`
   @media (min-width: 900px) {
 
   }
+`
+
+const ShareWrapper = styled.div`
+  width: 200px
 `
 
 const rotateAnimation = keyframes`
@@ -424,6 +438,7 @@ const sty = {
   BestWrapper,
   BestWrapperImage,
   BestPizzaImg,
+  ShareWrapper,
   rotateAnimation,
   RotatingImage,
 }

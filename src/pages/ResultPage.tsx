@@ -45,6 +45,9 @@ export default function ResultPage():React.ReactElement {
               <sty.BestPizzaImg src={bestPizzaImg2?.image} alt="피자" />
             </sty.BestWrapperImage>
           </sty.BestWrapper>
+          <sty.ShareWrapper>
+            <sty.Button />
+          </sty.ShareWrapper>
         </sty.ContentWrapper>
     </sty.Wrapper>
   )

@@ -35,8 +35,9 @@ export default function MainPage():React.ReactElement {
           제작자: metze.
           </sty.small>
         </sty.smallWrapper>
-        <sty.Button onClick={handleClickButton} style={{fontSize:25, marginTop:20, marginBottom:20}}>테스트 시작</sty.Button>
+        <sty.Button onClick={handleClickButton}>테스트 시작</sty.Button>
       </sty.ContentWrapper>
+      <div className="adfit" />
     </sty.Wrapper>
   )
 }
