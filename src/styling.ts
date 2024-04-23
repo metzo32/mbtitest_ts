@@ -56,7 +56,7 @@ const HeaderWrapper = styled.div`
   align-items: center;
   justify-content: center;
   font-family: "oneTitle";
-  font-size: 30px;
+  font-size: 35px;
   white-space: nowrap;
 
   @media (min-width: 600px) {
@@ -73,6 +73,7 @@ const Header = styled.div`
   background: #FFAA20;
   display: flex;
   align-items: center;
+  
   }
 `;
 
@@ -81,6 +82,7 @@ const ProgressbarWrapper = styled.div`
     width: 100%; 
     height: 30px; 
     background: #FFF5E8;
+
   }
 
   .progress-bar {
@@ -93,7 +95,7 @@ const ProgressbarWrapper = styled.div`
 
 const Title = styled.div`
   display: block;
-  font-size: 16pt;
+  font-size: 20pt;
   display: flex;
   padding: 20px;
   white-space: nowrap;
@@ -178,7 +180,7 @@ const small = styled.div`
 
 const QuestionTitle = styled.div`
   display: block;
-  font-size: 14pt;
+  font-size: 16pt;
   font-style: bold;
   display: flex;
   margin-top: 16px;
@@ -197,13 +199,19 @@ const ButtonGroup = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-left: 15px;
+  margin-right: 15px;
   
   @media (min-width: 600px) {
     flex-direction: column;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   @media (min-width: 900px) {
     flex-direction: row;
+    margin-left: 0px;
+    margin-right: 0px;
 `;
 
 const Button = styled.div`
@@ -221,7 +229,7 @@ const Button = styled.div`
 
   &.right-margin {
     margin-right: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
     @media (min-width: 600px) {
       font-size: 18pt;
@@ -291,12 +299,14 @@ const ResultDesc = styled.div`
 `;
 
 const resultSmall = styled.div`
+color: #707070;
   font-size: 10pt;
   max-width: 600px;
   display: flex;
   margin-top: 20px;
   margin-bottom: 30px;
-  color: #707070;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: 600px) {
     width: 800px
@@ -305,6 +315,8 @@ const resultSmall = styled.div`
     margin-bottom: 40px;
     margin-left: 10px;
     margin-right: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
     white-space: normal;
   }
 
@@ -312,6 +324,8 @@ const resultSmall = styled.div`
     font-size: 16pt;
     max-width: 800px;
     margin-bottom: 60px;
+    padding-left: 0px;
+    padding-right: 0px;
     white-space: normal;
 `;
 
