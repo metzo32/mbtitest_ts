@@ -36,7 +36,7 @@ export default function QuestionPage():React.ReactElement {
       const mbti = newScore.reduce(
         (acc, curr) => 
         acc + (curr.score >= 3 
-          ? curr.id.substring(0, 1) // 3보다 크면 왼쪽 글자, 작으면 오른쪽 글자 선택
+          ? curr.id.substring(0, 1) // 3보다 크거나 같으면 왼쪽 글자, 작으면 오른쪽 글자 선택
           : curr.id.substring(1, 2)
         ), 
         "" // 초기값 
