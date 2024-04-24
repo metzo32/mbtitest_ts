@@ -9,8 +9,8 @@ const Wrapper = styled.div`
   min-height: 100vh;
   background: #FFEFD8;
   padding-top: 40px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 7px;
+  padding-right: 7px;
   font-family: "oneBold";
   user-select: none;
 
@@ -201,22 +201,26 @@ const ButtonGroup = styled.div`
   flex-direction: column;
   margin-left: 15px;
   margin-right: 15px;
+  font-size: 20pt;
+  
   
   @media (min-width: 600px) {
     flex-direction: column;
     margin-left: 0px;
     margin-right: 0px;
+
   }
 
   @media (min-width: 900px) {
     flex-direction: row;
     margin-left: 0px;
     margin-right: 0px;
+
+  }
 `;
 
 const Button = styled.div`
   background: #FFAA1F;
-  font-size: 15pt;
   color: #ffffff;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -228,17 +232,15 @@ const Button = styled.div`
   margin-top: 20px;
 
   &.right-margin {
-    margin-right: 0px;
+    margin-right: 10px;
     margin-bottom: 10px;
 
     @media (min-width: 600px) {
-      font-size: 18pt;
       margin-right: 0px;
       margin-bottom: 20px;
     }
 
     @media (min-width: 900px) {
-      font-size: 20pt;
       margin-right: 20px;
       margin-bottom: 0;
     }
@@ -407,12 +409,15 @@ const BestPizzaImg = styled.img`
   }
 
   @media (min-width: 900px) {
-
   }
 `
 
 const ShareWrapper = styled.div`
-  width: 200px
+  width: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
 `
 
 const rotateAnimation = keyframes`

@@ -4,6 +4,7 @@ import Header from '../components/Header'
 import { useNavigate } from 'react-router-dom'
 
 import MainImage from '../assets/pizza/pizza_Main.jpg'
+import { ButtonGroup } from 'react-bootstrap'
 // import transition from '../transition'
 
 export default function MainPage():React.ReactElement {
@@ -35,7 +36,9 @@ export default function MainPage():React.ReactElement {
           제작자: metze.
           </sty.small>
         </sty.smallWrapper>
-        <sty.Button onClick={handleClickButton}>테스트 시작</sty.Button>
+        <sty.ButtonGroup>
+          <sty.Button onClick={handleClickButton}>테스트 시작</sty.Button>
+        </sty.ButtonGroup>
       </sty.ContentWrapper>
       <div className="adfit" />
     </sty.Wrapper>

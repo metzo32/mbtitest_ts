@@ -2,13 +2,15 @@ import React from 'react'
 import { ResultData } from '../stores/Result/ResultData'
 import Header from '../components/Header'
 import sty from '../styling'
-import { useSearchParams } from 'react-router-dom'
+import { useSearchParams, useNavigate } from 'react-router-dom'
 import { IResult } from '../stores/Result/types'
+import ShareUrl from '../components/ShareURL'
 // import transition from '../transition'
 
 
 export default function ResultPage():React.ReactElement {
   const [searchParams] = useSearchParams()
+  const navigate = useNavigate()
   const mbti = searchParams.get('mbti')
   
   const TestResult = ResultData.find((pizza: IResult) => pizza.my === mbti) 
@@ -46,7 +48,10 @@ export default function ResultPage():React.ReactElement {
             </sty.BestWrapperImage>
           </sty.BestWrapper>
           <sty.ShareWrapper>
-            <sty.Button />
+            <sty.ButtonGroup>
+              <sty.Button className="right-margin">테스트 다시하기</sty.Button>
+              <ShareUrl />
+            </sty.ButtonGroup>
           </sty.ShareWrapper>
         </sty.ContentWrapper>
     </sty.Wrapper>
