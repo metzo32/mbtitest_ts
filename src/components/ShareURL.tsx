@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 import sty from '../styling'
 
@@ -12,10 +12,10 @@ export default function ShareUrl() {
     el.select();
     document.execCommand("copy");
     document.body.removeChild(el);
-    setCopied(true);
+    setCopied(!copied);
   }
 
   return (
-    <sty.Button onClick={copy}>{!copied ? "공유하기" : "복사 완료!"}</sty.Button>
+    <sty.Button className="right-margin" onClick={copy}>{!copied ? "공유하기" : "복사 완료!"}</sty.Button>
   );
 }
