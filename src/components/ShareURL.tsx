@@ -16,6 +16,6 @@ export default function ShareUrl() {
   }
 
   return (
-    <sty.Button onClick={copy}>{!copied ? "공유하기" : "복사 완료!"}</sty.Button>
+    <sty.Button className="right-margin" onClick={copy}>{!copied ? "공유하기" : "복사 완료!"}</sty.Button>
   );
 }

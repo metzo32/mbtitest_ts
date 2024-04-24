@@ -5,6 +5,7 @@ import sty from '../styling'
 import { useSearchParams, useNavigate } from 'react-router-dom'
 import { IResult } from '../stores/Result/types'
 import ShareUrl from '../components/ShareURL'
+import ThankYou from '../components/ThankYou'
 // import transition from '../transition'
 
 
@@ -20,6 +21,10 @@ export default function ResultPage():React.ReactElement {
 
   const bestPizzaImg = ResultData.find(pizza => pizza.name === bestPizza)
   const bestPizzaImg2 = ResultData.find(pizza => pizza.name === bestPizza2)
+
+  const home = () => {
+    navigate("/")
+  }
 
   return (
     <sty.Wrapper>
@@ -47,12 +52,11 @@ export default function ResultPage():React.ReactElement {
               <sty.BestPizzaImg src={bestPizzaImg2?.image} alt="피자" />
             </sty.BestWrapperImage>
           </sty.BestWrapper>
-          <sty.ShareWrapper>
             <sty.ButtonGroup>
-              <sty.Button className="right-margin">테스트 다시하기</sty.Button>
+              <sty.Button className="right-margin" onClick={home}>테스트 다시하기</sty.Button>
               <ShareUrl />
+              <ThankYou />
             </sty.ButtonGroup>
-          </sty.ShareWrapper>
         </sty.ContentWrapper>
     </sty.Wrapper>
   )

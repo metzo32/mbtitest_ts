@@ -201,21 +201,21 @@ const ButtonGroup = styled.div`
   flex-direction: column;
   margin-left: 15px;
   margin-right: 15px;
-  font-size: 20pt;
+  font-size: 14pt;
   
   
   @media (min-width: 600px) {
     flex-direction: column;
     margin-left: 0px;
     margin-right: 0px;
-
+    font-size: 16pt;
   }
 
   @media (min-width: 900px) {
     flex-direction: row;
     margin-left: 0px;
     margin-right: 0px;
-
+    font-size: 20pt;
   }
 `;
 
@@ -231,9 +231,12 @@ const Button = styled.div`
   user-select: none;
   margin-top: 20px;
 
+  &:hover {
+    background-color: rgba(255,210,57,1);
+  }
+
   &.right-margin {
     margin-right: 10px;
-    margin-bottom: 10px;
 
     @media (min-width: 600px) {
       margin-right: 0px;
@@ -337,17 +340,19 @@ const BestWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   margin-top: 0px;
 
   @media (min-width: 600px) {
     width: 90%;
     margin-top: 0px;
+    margin-bottom: 40px;
   }
 
   @media (min-width: 900px) {
     margin-top: 50px;
     width: 800px;
+    margin-bottom: 50px;
   }
 `;
 
@@ -412,14 +417,6 @@ const BestPizzaImg = styled.img`
   }
 `
 
-const ShareWrapper = styled.div`
-  width: 520px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
-`
-
 const rotateAnimation = keyframes`
   from {
     transform: rotate(0deg);
@@ -457,7 +454,6 @@ const sty = {
   BestWrapper,
   BestWrapperImage,
   BestPizzaImg,
-  ShareWrapper,
   rotateAnimation,
   RotatingImage,
 }
