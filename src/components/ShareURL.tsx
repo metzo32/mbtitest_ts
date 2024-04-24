@@ -10,8 +10,6 @@ export default function ShareUrl() {
     el.value = "https://discordpizza.netlify.app";
     document.body.appendChild(el);
     el.select();
-    document.execCommand("copy");
-    document.body.removeChild(el);
     setCopied(true);
   }
 

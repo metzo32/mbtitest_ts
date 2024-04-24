@@ -6,7 +6,6 @@ import { useSearchParams, useNavigate } from 'react-router-dom'
 import { IResult } from '../stores/Result/types'
 import ShareUrl from '../components/ShareURL'
 import ThankYou from '../components/ThankYou'
-// import transition from '../transition'
 
 
 export default function ResultPage():React.ReactElement {
