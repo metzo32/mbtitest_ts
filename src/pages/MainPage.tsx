@@ -4,7 +4,6 @@ import Header from '../components/Header'
 import { useNavigate } from 'react-router-dom'
 
 import MainImage from '../assets/pizza/pizza_Main.jpg'
-import { ButtonGroup } from 'react-bootstrap'
 // import transition from '../transition'
 
 export default function MainPage():React.ReactElement {
