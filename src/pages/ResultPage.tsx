@@ -52,7 +52,7 @@ export default function ResultPage():React.ReactElement {
             </sty.BestWrapperImage>
           </sty.BestWrapper>
             <sty.ButtonGroup>
-              <sty.Button className="right-margin" onClick={home}>테스트 다시하기</sty.Button>
+              <sty.Button className="right-margin" onClick={home}>처음부터 다시하기</sty.Button>
               <ShareUrl />
               <ThankYou />
             </sty.ButtonGroup>

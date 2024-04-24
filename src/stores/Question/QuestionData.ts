@@ -124,8 +124,8 @@ export const QuestionData: IQuestion[] = [
     {
         id : 18,
         title: "다음 중 세나는 무엇을 더 좋아할까?",
-        answerA: "계란이랑 치즈",   // J관련
-        answerB: "정원",   // P관련
+        answerA: "정원",   // J관련
+        answerB: "퇴사",   // P관련
         type: "PJ",
     },
     {
