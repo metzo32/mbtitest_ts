@@ -7,7 +7,7 @@ export default function ShareUrl() {
 
   function copy() {
     const el = document.createElement("input");
-    el.value = window.location.href;
+    el.value = "https://discordpizza.netlify.app";
     document.body.appendChild(el);
     el.select();
     document.execCommand("copy");

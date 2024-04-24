@@ -9,10 +9,10 @@ import { createSearchParams, useNavigate } from 'react-router-dom'
 export default function QuestionPage():React.ReactElement {
   const [questionNumber, setQuestionNumber] = useState(0);
   const [totalScore, setTotalScore] = useState([
-   { id: "EI", score: 0},
-   { id: "NS", score: 0},
-   { id: "FT", score: 0},
-   { id: "JP", score: 0},
+   { id: "AB", score: 0},
+   { id: "CD", score: 0},
+   { id: "EF", score: 0},
+   { id: "GH", score: 0},
   ])
 
   const navigate = useNavigate()
@@ -46,7 +46,7 @@ export default function QuestionPage():React.ReactElement {
       navigate({
         pathname: "/result",
         search: `?${createSearchParams({
-          mbti: mbti,
+          path: mbti,
         })}`
       })
     }
