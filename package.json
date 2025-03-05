@@ -6,7 +6,10 @@
   "author": "METZ <metzo3232@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "react-scripts start"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "dependencies": {
     "@types/react-dom": "^19.0.4",
