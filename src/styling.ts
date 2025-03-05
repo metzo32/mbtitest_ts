@@ -1,30 +1,31 @@
-import styled, { keyframes } from 'styled-components'
+import styled, { keyframes } from 'styled-components';
 
 const Wrapper = styled.div`
   display: flex;
+  box-sizing: border-box;
+  background: #ffefd8;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   min-width: 320px;
   min-height: 100vh;
-  background: #FFEFD8;
   padding-top: 40px;
   padding-left: 7px;
   padding-right: 7px;
-  font-family: "oneBold";
+  font-family: 'oneBold';
   user-select: none;
 
   @media (min-width: 600px) {
-    width: 100%; 
-    height: 100%;  
-    min-height: 100vh;  
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
     padding-left: 30px;
     padding-right: 30px;
   }
 
   @media (min-width: 900px) {
     width: 100%;
-    height: 100%; 
+    height: 100%;
     min-height: 100vh;
     padding-left: 30px;
     padding-right: 30px;
@@ -49,13 +50,13 @@ const ContentWrapper = styled.div`
 `;
 
 //대제목
-const HeaderWrapper = styled.div` 
-  background: #FFAA20;
+const HeaderWrapper = styled.div`
+  background: #ffaa20;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "oneTitle";
+  font-family: 'oneTitle';
   font-size: 35px;
   white-space: nowrap;
 
@@ -68,7 +69,7 @@ const HeaderWrapper = styled.div`
     border-radius: 20px;
     font-size: 60px;
   }
-`
+`;
 const Header = styled.div`
   background: #FFAA20;
   display: flex;
@@ -78,20 +79,28 @@ const Header = styled.div`
 `;
 
 const ProgressbarWrapper = styled.div`
-  .progress {
-    width: 100%; 
-    height: 30px; 
-    background: #FFF5E8;
-
-  }
+  width: 100%;
+  height: 30px;
+  background: #fff5e8;
 
   .progress-bar {
-    background-color: #FFAA20; 
+    height: 30px;
+    background-color: #ffaa20;
     transition: width 0.6s ease;
-    background: rgb(255,210,57);
-    background: linear-gradient(90deg, rgba(255,210,57,1) 0%, rgba(254,169,32,1) 50%, rgba(255,134,42,1) 100%);
+    background: rgb(255, 210, 57);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 210, 57, 1) 0%,
+      rgba(254, 169, 32, 1) 50%,
+      rgba(255, 134, 42, 1) 100%
+    );
+    color: white;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `;
-
 
 const Title = styled.div`
   display: block;
@@ -115,24 +124,23 @@ const Title = styled.div`
 const LogoImage = styled.div`
   display: flex;
   margin-bottom: 16px;
-  
+
   .main-pizza {
     max-width: 280px;
     height: 280px;
     margin-bottom: 24px;
-    
+
     @media (min-width: 600px) {
       max-width: 330px;
       height: 330px;
     }
-  
+
     @media (min-width: 900px) {
       max-width: 380px;
       height: 380px;
     }
   }
 `;
-
 
 const Desc = styled.div`
   font-size: 13pt;
@@ -193,7 +201,7 @@ const QuestionTitle = styled.div`
 
   @media (min-width: 900px) {
     font-size: 26pt;
-`
+`;
 const ButtonGroup = styled.div`
   display: flex;
   align-items: center;
@@ -202,8 +210,7 @@ const ButtonGroup = styled.div`
   margin-left: 15px;
   margin-right: 15px;
   font-size: 14pt;
-  
-  
+
   @media (min-width: 600px) {
     flex-direction: column;
     margin-left: 0px;
@@ -220,7 +227,7 @@ const ButtonGroup = styled.div`
 `;
 
 const Button = styled.div`
-  background: #FFAA1F;
+  background: #ffaa1f;
   color: #ffffff;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -232,7 +239,7 @@ const Button = styled.div`
   margin-top: 20px;
 
   &:hover {
-    background-color: rgba(255,210,57,1);
+    background-color: rgba(255, 210, 57, 1);
   }
 
   &.right-margin {
@@ -251,22 +258,21 @@ const Button = styled.div`
 `;
 
 const StyledImage = styled.img`
+  width: 90%;
+  border-radius: 30px;
+
+  @media (min-width: 600px) {
     width: 90%;
-    border-radius: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 
-    @media (min-width: 600px) {
-      width: 90%;
-      margin-left: 0px;
-      margin-right: 0px;
-    }
-
-    @media (min-width: 900px) {
-      width: 800px;
-      margin-left: 0px;
-      margin-right: 0px;
-    }
-  `;
-
+  @media (min-width: 900px) {
+    width: 800px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+`;
 
 const ResultTitle = styled.div`
   display: block;
@@ -370,7 +376,7 @@ const BestDescWrapper = styled.div`
 
   @media (min-width: 900px) {
     margin-bottom: 35px;
-`
+`;
 
 const BestDesc = styled.div`
   
@@ -415,7 +421,7 @@ const BestPizzaImg = styled.img`
 
   @media (min-width: 900px) {
   }
-`
+`;
 
 const rotateAnimation = keyframes`
   from {
@@ -427,9 +433,9 @@ const rotateAnimation = keyframes`
 `;
 
 const RotatingImage = styled.img`
+  border-radius: 100%;
   animation: ${rotateAnimation} 4s steps(12, end) infinite; // 18단계로 나누어 매 초마다 회전
 `;
-
 
 const sty = {
   Wrapper,
@@ -456,6 +462,6 @@ const sty = {
   BestPizzaImg,
   rotateAnimation,
   RotatingImage,
-}
+};
 
 export default sty;

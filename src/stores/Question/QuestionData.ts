@@ -18,8 +18,8 @@ export const QuestionData: IQuestion[] = [
     {
         id : 3,
         title: "게임에 몰두하고 있는 와중, 누군가 나를 급하게 멘션했다.",
-        answerA: "'누구야 뭐야!' 곧바로 확인한다.",   // E관련
-        answerB: "도하가 보낸 릴스가 분명하다. 알림을 끄고 게임에 집중한다.",   // I관련
+        answerA: "'헉 DM은 못참지' 곧바로 확인한다.",   // E관련
+        answerB: "그냥 밈 보낸거겠지... 알림을 끄고 게임에 집중한다.",   // I관련
         type: "EI",
     },
     {
@@ -39,7 +39,7 @@ export const QuestionData: IQuestion[] = [
     {
         id : 6,
         title: "채널이 조용하다. 나는 무슨 이야기를 할까?",
-        answerA: "오늘의 TMI를 방출한다.",   // N관련
+        answerA: "내가 먼저 오늘의 TMI를 방출한다.",   // N관련
         answerB:  "'매체님 재미있는 이야기 해주세요.' 혹부리 할매를 부른다.", // S관련
         type: "NS",
     },
@@ -47,14 +47,14 @@ export const QuestionData: IQuestion[] = [
     {
         id : 7,
         title: "맙소사! 멋진 POTG를 기록했다!",
-        answerA: "'진웅님 제발 이거 봐줘요!' 채널에 강제로 초대해 상영회를 열고 칭찬을 기대한다.",   // N관련
+        answerA: "'진웅님 제발 이거 봐줘요!' 강제로 상영회를 열고 칭찬을 기대한다.",   // N관련
         answerB: "'역시 나야...' 조용히 만족한다.",   // S관련
         type: "NS",
     },
     {
         id : 8,
-        title: "각자 할 거 하는 방에서 나는-",
-        answerA: "유튜브를 보던 숙제를 하던 할 거 한다.",   // N관련
+        title: "조용한 디스코드 방에서 나는-",
+        answerA: "혼자 할 거 한다.",   // N관련
         answerB: "그냥 멍때린다.",   // S관련
         type: "NS",
     },
@@ -62,12 +62,12 @@ export const QuestionData: IQuestion[] = [
         id : 9,
         title: "오후 7시. 재현이 저녁 메뉴를 추천해달라고 한다.",
         answerA: "'김치 사발면에 참치 김밥 한줄이랑 빠다코코넛에 투게더 얹어 먹죠.' 홀린 듯 술술 말한다.",   // N관련
-        answerB: "저걸 왜 나한테 묻는 걸까? 그냥 굶죠?",   // S관련
+        answerB: "저걸 왜 나한테 묻는걸까? 신경쓰지 않는다.",   // S관련
         type: "NS",
     },
     {
         id : 10,
-        title: "중간고사 기간. 봉봉이 공부를 하다 말고 '여러분 저 잠와요...' 라고 한다.",
+        title: "중간고사 기간. 봉봉이 공부를 하다 말고 '저 잠와요...' 라고 한다.",
         answerA: "그만 자",   // N관련
         answerB: "공부해",   // S관련
         type: "NS",
@@ -76,7 +76,7 @@ export const QuestionData: IQuestion[] = [
         id : 11,
         title: "다함께 오버워치를 하는데 오늘따라 세나의 목소리가 지쳐보인다.",
         answerA: "'세나님 무슨 일이 있으신가요?' 우선 듣고 응원해주려 한다.",   // F관련
-        answerB: "알빠노. 게임에 집중한다.",   // T관련
+        answerB: "상관 없다. 게임에 집중한다.",   // T관련
         type: "FT",
     },
     {
@@ -110,7 +110,7 @@ export const QuestionData: IQuestion[] = [
     {
         id : 16,
         title: "사고 싶은 스팀 게임이 너무 비싸다... 어떡하지?",
-        answerA: "'사 줘.' 한 줄기 희망을 가져본다.",   // P관련
+        answerA: "'사줘요!' 한 줄기 희망을 가져본다.",   // P관련
         answerB: "우선 찜 해두고 이번 해 여름 세일 기간을 기다린다.",   // J관련
         type: "PJ",
     },
@@ -118,7 +118,7 @@ export const QuestionData: IQuestion[] = [
         id : 17,
         title: "오버워치 신규 캐릭터가 나왔다.",
         answerA: "공격력, 스킬, 쿨타임 등 모든 정보를 꼼꼼히 읽고 미리 플레이해본다.",   // J관련
-        answerB: "'션 이거 어떻게 해?' 또는 랠파의 설명을 기다린다.",   // P관련
+        answerB: "'션 이거 어떻게 해?' 찰떡같은 설명을 기다린다.",   // P관련
         type: "PJ",
     },
     {

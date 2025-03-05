@@ -1,38 +1,22 @@
 {
-  "name": "mbti_test_ts",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.96",
-    "@types/react": "^18.2.79",
-    "@types/react-bootstrap": "^0.32.36",
-    "@types/react-dom": "^18.2.25",
-    "bootstrap": "^5.3.3",
-    "framer-motion": "^11.1.7",
-    "react": "^18.2.0",
-    "react-bootstrap": "^2.10.2",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.22.3",
-    "react-scripts": "^5.0.1",
-    "styled-components": "^6.1.8",
-    "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
-  },
+  "name": "mbtitest_ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/metzo32/mbtitest_ts.git",
+  "author": "METZ <metzo3232@gmail.com>",
+  "license": "MIT",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "react-scripts start"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "dependencies": {
+    "@types/react-dom": "^19.0.4",
+    "react": "^19.0.0",
+    "react-bootstrap": "^2.10.9",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.2.0",
+    "react-scripts": "^5.0.1",
+    "styled-components": "^6.1.15",
+    "typescript": "^5.8.2"
   },
   "browserslist": {
     "production": [
@@ -47,6 +31,6 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "@types/react": "^19.0.10"
   }
 }
