@@ -2,7 +2,7 @@
 
 ## 프로젝트 개요
 #### 디스코드 친구들과의 일화를 바탕으로, MBTI 로직에 따라 나와 어울리는 피자를 찾는 심리 테스트입니다.
-https://discordpizza.netlify.app/
+#### https://discordpizza.netlify.app/
 ---
 
 ### 사용 툴 및 라이브러리
