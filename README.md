@@ -20,7 +20,7 @@
 - 반응형 웹 디자인
 - SPA를 기반으로 컴포넌트 동적 렌더링 구현
 - 총 20개의 질문 진행에 따라 달라지는 프로그레스 바
-- MBTI 각 4개 영역의 질문에 따라 점수가 매겨지고, 결과를 Query String으로 전달하여 나타냄
+- MBTI 각 4개 영역의 질문에 따라 점수가 매겨지고, 결과를 React-Router-Dom의 useLocation, URLSearchParams을 통해 Query String으로 전달하여 조건부로 나타냄
 - Kakao Ads 추가
 
 
